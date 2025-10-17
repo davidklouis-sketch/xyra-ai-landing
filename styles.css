@@ -112,11 +112,11 @@ body {
 .logo-circle {
     width: 32px;
     height: 32px;
-    border: 2px solid var(--primary-blue);
+    border: 2px solid #00ff88;
     border-radius: 50%;
     position: relative;
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    box-shadow: 0 0 20px rgba(30, 58, 138, 0.6), 0 0 40px rgba(0, 255, 136, 0.3);
+    background: linear-gradient(135deg, #00ff88, #00cc6a);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.8), 0 0 50px rgba(0, 255, 136, 0.4);
 }
 
 .logo-circle::before {
@@ -167,14 +167,14 @@ body {
 }
 
 .logo-xyra {
-    color: var(--primary-blue);
-    text-shadow: 0 0 15px rgba(30, 58, 138, 0.8), 0 0 30px rgba(30, 58, 138, 0.4);
+    color: #00ff88;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 1), 0 0 40px rgba(0, 255, 136, 0.6);
     letter-spacing: -0.5px;
 }
 
 .logo-ai {
-    color: var(--primary-green);
-    text-shadow: 0 0 15px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
+    color: #00ff88;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 1), 0 0 40px rgba(0, 255, 136, 0.6);
     letter-spacing: -0.5px;
 }
 
@@ -695,11 +695,11 @@ body {
 .footer-logo .logo-circle {
     width: 26px;
     height: 26px;
-    border: 2px solid var(--primary-blue);
+    border: 2px solid #00ff88;
     border-radius: 50%;
     position: relative;
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    box-shadow: 0 0 15px rgba(30, 58, 138, 0.5), 0 0 30px rgba(0, 255, 136, 0.2);
+    background: linear-gradient(135deg, #00ff88, #00cc6a);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6), 0 0 40px rgba(0, 255, 136, 0.3);
 }
 
 .footer-logo .logo-circle::before {
@@ -745,14 +745,14 @@ body {
 }
 
 .footer-logo .logo-xyra {
-    color: var(--primary-blue);
-    text-shadow: 0 0 12px rgba(30, 58, 138, 0.6), 0 0 24px rgba(30, 58, 138, 0.3);
+    color: #00ff88;
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
     letter-spacing: -0.5px;
 }
 
 .footer-logo .logo-ai {
-    color: var(--primary-green);
-    text-shadow: 0 0 12px rgba(0, 255, 136, 0.6), 0 0 24px rgba(0, 255, 136, 0.3);
+    color: #00ff88;
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
     letter-spacing: -0.5px;
 }
 
