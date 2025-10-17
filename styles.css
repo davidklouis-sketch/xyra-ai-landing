@@ -101,11 +101,6 @@ body {
     object-fit: contain;
     background: transparent;
     filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3));
-    -webkit-mask: url('logo.svg') no-repeat center;
-    mask: url('logo.svg') no-repeat center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    background-color: var(--primary-green);
 }
 
 .nav-menu {
@@ -614,11 +609,6 @@ body {
     object-fit: contain;
     background: transparent;
     filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.2));
-    -webkit-mask: url('logo.svg') no-repeat center;
-    mask: url('logo.svg') no-repeat center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    background-color: var(--primary-green);
 }
 
 .footer-section p {
