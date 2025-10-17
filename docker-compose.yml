@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  ai-landing-page:
+    build: .
+    container_name: ai-landing-page
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Mount SSL certificates (create these files or use Let's Encrypt)
+      - ./ssl/cert.pem:/etc/nginx/ssl/cert.pem:ro
+      - ./ssl/key.pem:/etc/nginx/ssl/key.pem:ro
+      # Optional: Mount logs for debugging
+      - ./logs:/var/log/nginx
+    restart: unless-stopped
+    environment:
+      - TZ=UTC
+    networks:
+      - ai-network
+
+networks:
+  ai-network:
+    driver: bridge
