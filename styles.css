@@ -100,7 +100,8 @@ body {
     margin-right: 0.5rem;
     object-fit: contain;
     background: transparent;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3));
+    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3)) brightness(1.2) contrast(1.1);
+    mix-blend-mode: screen;
 }
 
 .nav-menu {
@@ -608,7 +609,8 @@ body {
     margin-right: 0.5rem;
     object-fit: contain;
     background: transparent;
-    filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.2));
+    filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.2)) brightness(1.2) contrast(1.1);
+    mix-blend-mode: screen;
 }
 
 .footer-section p {
