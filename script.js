@@ -29,26 +29,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Ensure navbar always stays navy blue
+// Ensure navbar always stays black
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
-    navbar.style.background = 'rgba(15, 23, 42, 0.95) !important';
-    navbar.style.setProperty('background', 'rgba(15, 23, 42, 0.95)', 'important');
+    navbar.style.background = 'rgba(0, 0, 0, 0.95) !important';
+    navbar.style.setProperty('background', 'rgba(0, 0, 0, 0.95)', 'important');
 });
 
 // Force navbar color on scroll (prevent any other scripts from changing it)
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    navbar.style.background = 'rgba(15, 23, 42, 0.95) !important';
-    navbar.style.setProperty('background', 'rgba(15, 23, 42, 0.95)', 'important');
+    navbar.style.background = 'rgba(0, 0, 0, 0.95) !important';
+    navbar.style.setProperty('background', 'rgba(0, 0, 0, 0.95)', 'important');
 });
 
 // Additional safety: check and fix navbar color periodically
 setInterval(() => {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95) !important';
-        navbar.style.setProperty('background', 'rgba(15, 23, 42, 0.95)', 'important');
+        navbar.style.background = 'rgba(0, 0, 0, 0.95) !important';
+        navbar.style.setProperty('background', 'rgba(0, 0, 0, 0.95)', 'important');
     }
 }, 100);
 

@@ -31,7 +31,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--navy-blue);
+    background: var(--black);
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -48,18 +48,18 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.95) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(0, 255, 136, 0.2);
 }
 
-/* Force navbar to stay navy blue - override any other rules */
+/* Force navbar to stay black - override any other rules */
 .navbar,
 .navbar[style*="background"] {
-    background: rgba(15, 23, 42, 0.95) !important;
-    background-color: rgba(15, 23, 42, 0.95) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
 }
 
 .nav-container {
@@ -116,7 +116,7 @@ body {
     border-radius: 50%;
     position: relative;
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    box-shadow: 0 0 15px rgba(30, 58, 138, 0.4);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.6), 0 0 40px rgba(0, 255, 136, 0.3);
 }
 
 .logo-circle::before {
@@ -168,13 +168,13 @@ body {
 
 .logo-xyra {
     color: var(--primary-blue);
-    text-shadow: 0 0 10px rgba(30, 58, 138, 0.5);
+    text-shadow: 0 0 15px rgba(30, 58, 138, 0.8), 0 0 30px rgba(30, 58, 138, 0.4);
     letter-spacing: -0.5px;
 }
 
 .logo-ai {
     color: var(--primary-green);
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
     letter-spacing: -0.5px;
 }
 
@@ -388,7 +388,7 @@ body {
 /* Features Section */
 .features {
     padding: 6rem 0;
-    background: var(--dark-blue);
+    background: var(--dark-gray);
 }
 
 .section-header {
@@ -476,7 +476,7 @@ body {
 /* About Section */
 .about {
     padding: 6rem 0;
-    background: var(--navy-blue);
+    background: var(--black);
 }
 
 .about-content {
@@ -566,7 +566,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: var(--dark-blue);
+    background: var(--dark-gray);
 }
 
 .contact-content {
@@ -641,9 +641,9 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--navy-blue);
+    background: var(--black);
     padding: 3rem 0 1rem;
-    border-top: 1px solid rgba(30, 58, 138, 0.3);
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
 }
 
 .footer-content {
@@ -699,7 +699,7 @@ body {
     border-radius: 50%;
     position: relative;
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    box-shadow: 0 0 12px rgba(30, 58, 138, 0.3);
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.5), 0 0 30px rgba(0, 255, 136, 0.2);
 }
 
 .footer-logo .logo-circle::before {
@@ -746,13 +746,13 @@ body {
 
 .footer-logo .logo-xyra {
     color: var(--primary-blue);
-    text-shadow: 0 0 8px rgba(30, 58, 138, 0.4);
+    text-shadow: 0 0 12px rgba(30, 58, 138, 0.6), 0 0 24px rgba(30, 58, 138, 0.3);
     letter-spacing: -0.5px;
 }
 
 .footer-logo .logo-ai {
     color: var(--primary-green);
-    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+    text-shadow: 0 0 12px rgba(0, 255, 136, 0.6), 0 0 24px rgba(0, 255, 136, 0.3);
     letter-spacing: -0.5px;
 }
 
@@ -826,7 +826,7 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: var(--dark-blue);
+        background-color: var(--dark-gray);
         width: 100%;
         text-align: center;
         transition: 0.3s;
