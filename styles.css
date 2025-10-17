@@ -9,23 +9,16 @@
     --primary-green: #00ff88;
     --secondary-green: #00cc6a;
     --dark-green: #00a855;
-    --primary-blue: #1e3a8a;
-    --secondary-blue: #1e40af;
-    --dark-blue: #1e293b;
-    --navy-blue: #0f172a;
     --black: #000000;
-    --dark-gray: #0f1419;
-    --medium-gray: #1a202c;
-    --light-gray: #2d3748;
+    --dark-gray: #111111;
+    --medium-gray: #1a1a1a;
+    --light-gray: #2a2a2a;
     --text-light: #ffffff;
-    --text-gray: #e2e8f0;
-    --text-muted: #94a3b8;
+    --text-gray: #cccccc;
+    --text-muted: #888888;
     --gradient-primary: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
-    --gradient-blue: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-    --gradient-dark: linear-gradient(135deg, var(--navy-blue), var(--dark-blue));
-    --gradient-mixed: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+    --gradient-dark: linear-gradient(135deg, var(--black), var(--dark-gray));
     --shadow-glow: 0 0 20px rgba(0, 255, 136, 0.3);
-    --shadow-blue: 0 0 20px rgba(30, 58, 138, 0.3);
     --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
@@ -127,7 +120,7 @@ body {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background: var(--navy-blue);
+    background: var(--black);
     border-radius: 50%;
     box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.3);
 }
@@ -422,7 +415,7 @@ body {
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(30, 58, 138, 0.3);
+    border: 1px solid rgba(0, 255, 136, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -444,21 +437,21 @@ body {
 
 .feature-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-blue);
-    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--primary-green);
 }
 
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: var(--gradient-mixed);
+    background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
     font-size: 2rem;
-    color: var(--text-light);
+    color: var(--black);
 }
 
 .feature-card h3 {
@@ -531,7 +524,7 @@ body {
     width: 300px;
     height: 300px;
     position: relative;
-    border: 2px solid var(--primary-blue);
+    border: 2px solid var(--primary-green);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -710,7 +703,7 @@ body {
     transform: translate(-50%, -50%);
     width: 16px;
     height: 16px;
-    background: var(--navy-blue);
+    background: var(--black);
     border-radius: 50%;
     box-shadow: inset 0 0 8px rgba(0, 255, 136, 0.2);
 }
