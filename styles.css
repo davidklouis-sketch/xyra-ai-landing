@@ -94,13 +94,22 @@ body {
     filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.5));
 }
 
-.logo-img {
-    height: 60px;
-    width: auto;
-    margin-right: 0.5rem;
-    object-fit: contain;
-    background: transparent;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3));
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo-xyra {
+    color: var(--primary-blue);
+    text-shadow: 0 0 10px rgba(30, 58, 138, 0.5);
+}
+
+.logo-ai {
+    color: var(--primary-green);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 .nav-menu {
@@ -602,13 +611,22 @@ body {
     filter: drop-shadow(0 0 12px rgba(0, 255, 136, 0.4));
 }
 
-.footer-logo .logo-img {
-    height: 50px;
-    width: auto;
-    margin-right: 0.5rem;
-    object-fit: contain;
-    background: transparent;
-    filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.2));
+.footer-logo .logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-logo .logo-xyra {
+    color: var(--primary-blue);
+    text-shadow: 0 0 8px rgba(30, 58, 138, 0.4);
+}
+
+.footer-logo .logo-ai {
+    color: var(--primary-green);
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
 }
 
 .footer-section p {
