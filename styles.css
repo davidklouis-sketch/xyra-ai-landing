@@ -94,10 +94,74 @@ body {
     filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.5));
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.4);
+}
+
+.logo-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: var(--navy-blue);
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.logo-dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 2px;
+}
+
+.logo-dots span {
+    width: 3px;
+    height: 3px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    animation: pulse-dots 2s infinite;
+}
+
+.logo-dots span:nth-child(1) { animation-delay: 0s; }
+.logo-dots span:nth-child(2) { animation-delay: 0.3s; }
+.logo-dots span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes pulse-dots {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
 .logo-text {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -105,11 +169,13 @@ body {
 .logo-xyra {
     color: var(--primary-blue);
     text-shadow: 0 0 10px rgba(30, 58, 138, 0.5);
+    letter-spacing: -0.5px;
 }
 
 .logo-ai {
     color: var(--primary-green);
     text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    letter-spacing: -0.5px;
 }
 
 .nav-menu {
@@ -611,10 +677,69 @@ body {
     filter: drop-shadow(0 0 12px rgba(0, 255, 136, 0.4));
 }
 
+.footer-logo .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-logo .logo-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo .logo-circle {
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+    box-shadow: 0 0 12px rgba(30, 58, 138, 0.3);
+}
+
+.footer-logo .logo-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: var(--navy-blue);
+    border-radius: 50%;
+    box-shadow: inset 0 0 8px rgba(0, 255, 136, 0.2);
+}
+
+.footer-logo .logo-dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1.5px;
+}
+
+.footer-logo .logo-dots span {
+    width: 2px;
+    height: 2px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    animation: pulse-dots 2s infinite;
+}
+
+.footer-logo .logo-dots span:nth-child(1) { animation-delay: 0s; }
+.footer-logo .logo-dots span:nth-child(2) { animation-delay: 0.3s; }
+.footer-logo .logo-dots span:nth-child(3) { animation-delay: 0.6s; }
+
 .footer-logo .logo-text {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -622,11 +747,13 @@ body {
 .footer-logo .logo-xyra {
     color: var(--primary-blue);
     text-shadow: 0 0 8px rgba(30, 58, 138, 0.4);
+    letter-spacing: -0.5px;
 }
 
 .footer-logo .logo-ai {
     color: var(--primary-green);
     text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+    letter-spacing: -0.5px;
 }
 
 .footer-section p {
